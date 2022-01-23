@@ -4,6 +4,7 @@ import { Header } from "./core/Header/Header"
 import { Biography } from "./core/Biography/Biography"
 import { Skills } from "./core/Skills/Skills"
 import { Experience } from "./core/Experience/Experience"
+import { Projects } from "./core/Projects/Projects"
 
 const Home: NextPage = () => {
   return (
@@ -17,6 +18,9 @@ const Home: NextPage = () => {
       </Flex>
       <Flex px="10%" flexDirection="column">
         <Experience />
+      </Flex>
+      <Flex px="10%" flexDirection="column">
+        <Projects />
       </Flex>
     </Flex>
   )
