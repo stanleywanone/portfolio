@@ -1,7 +1,7 @@
 import { FC } from "react"
 import { Flex, Box, Text } from "@chakra-ui/react"
 
-export const Header = () => {
+export const Header: FC = () => {
   return (
     <Flex
       w="full"
