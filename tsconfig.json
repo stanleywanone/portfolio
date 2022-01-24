@@ -5,6 +5,7 @@
     "paths": {
       "@/*": ["pages/*"]
     },
+    "typeRoots": ["./types"],
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -19,6 +20,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "*.pdf"],
   "exclude": ["node_modules"]
 }

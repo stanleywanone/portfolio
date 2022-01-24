@@ -26,11 +26,8 @@ export const Header: FC = () => {
         <Text cursor="pointer" onClick={() => router.push("/core/Projects")}>
           Projects
         </Text>
-        <Text>
+        <Text cursor="pointer" onClick={() => router.push("/core/Resume")}>
           Resume
-          <Link href="/Users/wan/Documents/GitHub/portfolio/pages/Resume.pdf">
-            example
-          </Link>
         </Text>
         <Text>Contact</Text>
       </Flex>
