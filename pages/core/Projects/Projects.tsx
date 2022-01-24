@@ -13,48 +13,70 @@ import { CircleIcon } from "../common/Icons/CircleIcon"
 
 export const Projects: FC = () => {
   return (
-    <Flex w="full" pt="8%" pb="8%">
-      <Flex w="35%" bg="blue.200" justifyContent="center">
+    <Flex w="full">
+      <Flex w="30%" justifyContent="center">
         <Text fontSize="5xl">Projects</Text>
       </Flex>
-      <Flex w="65%" bg="red.200" flexDirection="column">
-        <Flex bgColor="red.500" w="full" mb="5%">
+      <Flex w="70%" flexDirection="column" my="5%">
+        <Flex w="full" mb="5%">
           <Flex w="80%" flexDirection="column">
-            <Text>Fitness</Text>
-            <Text>
-              Personal assistant based on the command line with several inbuilt
-              features
+            <Text>Fitness App</Text>
+            <Text fontSize="xs" mb={5}>
+              Personal workout assistant app based on the React native, Expo and
+              firebase several inbuilt features
             </Text>
             <Text>Stanley Wan</Text>
-            <Text>Code</Text>
+            <Flex>
+              <Badge>Code</Badge>
+            </Flex>
           </Flex>
           <Flex w="20%">
             <Box h="full" w="full" bgColor="green.300"></Box>
           </Flex>
         </Flex>
-        <Flex bgColor="red.500" w="full" mb="5%">
+        <Flex mb="5%">
           <Flex w="80%" flexDirection="column">
-            <Text>Fitness</Text>
-            <Text>
-              Personal assistant based on the command line with several inbuilt
-              features
+            <Text>Smart Website</Text>
+            <Text fontSize="xs" mb={5}>
+              Smart web control intelligent home in lives based on ReactJS, PHP
+              and IFTTT
             </Text>
             <Text>Stanley Wan</Text>
-            <Text>Code</Text>
+            <Flex>
+              <Badge>Code</Badge>
+            </Flex>
           </Flex>
           <Flex w="20%">
             <Box h="full" w="full" bgColor="green.300"></Box>
           </Flex>
         </Flex>
-        <Flex bgColor="red.500" w="full" mb="5%">
+        <Flex mb="5%">
           <Flex w="80%" flexDirection="column">
-            <Text>Fitness</Text>
-            <Text>
-              Personal assistant based on the command line with several inbuilt
-              features
+            <Text>Studenthub</Text>
+            <Text fontSize="xs" mb={5}>
+              A self-community for studnets exchange knowledge based on ReactJS,
+              AWS
             </Text>
             <Text>Stanley Wan</Text>
-            <Text>Code</Text>
+            <Flex>
+              <Badge>Code</Badge>
+            </Flex>
+          </Flex>
+          <Flex w="20%">
+            <Box h="full" w="full" bgColor="green.300"></Box>
+          </Flex>
+        </Flex>
+        <Flex mb="5%">
+          <Flex w="80%" flexDirection="column">
+            <Text>Movie reivew</Text>
+            <Text fontSize="xs" mb={5}>
+              Find out the most pupular movies lists based on ReactJS, MongoDB
+              and Next.js
+            </Text>
+            <Text>Stanley Wan</Text>
+            <Flex>
+              <Badge>Code</Badge>
+            </Flex>
           </Flex>
           <Flex w="20%">
             <Box h="full" w="full" bgColor="green.300"></Box>
@@ -64,3 +86,5 @@ export const Projects: FC = () => {
     </Flex>
   )
 }
+
+export default Projects

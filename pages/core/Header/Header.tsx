@@ -1,5 +1,6 @@
 import { FC } from "react"
-import { Flex, Box, Text } from "@chakra-ui/react"
+import router from "next/router"
+import { Flex, Box, Text, Link } from "@chakra-ui/react"
 
 export const Header: FC = () => {
   return (
@@ -8,19 +9,29 @@ export const Header: FC = () => {
       backgroundColor="blackAlpha.900"
       color="white"
       flexDirection="row"
-      py="5"
       justifyContent="space-between"
       px="10%"
     >
-      <Flex w="60%">
-        <Text fontSize={36}>Stanley Wan</Text>
+      <Flex w="60%" fontSize={36}>
+        <Text>Stanley Wan</Text>
       </Flex>
 
       <Flex alignItems="center" w="40%" justifyContent="space-around">
-        <Text>Home</Text>
-        <Text>Experience</Text>
-        <Text>Projects</Text>
-        <Text>Resume</Text>
+        <Text cursor="pointer" onClick={() => router.push("/core/Biography")}>
+          Home
+        </Text>
+        <Text cursor="pointer" onClick={() => router.push("/core/Experience")}>
+          Experience
+        </Text>
+        <Text cursor="pointer" onClick={() => router.push("/core/Projects")}>
+          Projects
+        </Text>
+        <Text>
+          Resume
+          <Link href="/Users/wan/Documents/GitHub/portfolio/pages/Resume.pdf">
+            example
+          </Link>
+        </Text>
         <Text>Contact</Text>
       </Flex>
     </Flex>
