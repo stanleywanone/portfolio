@@ -29,7 +29,9 @@ export const Header: FC = () => {
         <Text cursor="pointer" onClick={() => router.push("/core/Resume")}>
           Resume
         </Text>
-        <Text>Contact</Text>
+        <Text cursor="pointer" onClick={() => router.push("/core/Contact")}>
+          Contact
+        </Text>
       </Flex>
     </Flex>
   )

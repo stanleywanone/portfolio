@@ -31,7 +31,7 @@ export const Home: FC = () => {
         My interests lie in delivering the concept of ideas on the front-end
         features related to mutilple areas of software engineerings.
       </Text>
-      <Flex w="full" mt={16}>
+      <Flex w="full" mt={16} flexDirection="row">
         <Flex flexDirection="column" w="50%">
           <Text fontSize="2xl" fontWeight="bold">
             Interest
