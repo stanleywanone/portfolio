@@ -1,37 +1,63 @@
-import { FC } from "react"
-import router from "next/router"
+import { FC, useMemo } from "react"
+import { useRouter } from "next/router"
 import { Flex, Box, Text, Link } from "@chakra-ui/react"
 
 export const Header: FC = () => {
+  const router = useRouter()
+
+  const routerName = useMemo(() => {
+    return router.pathname.substring(6)
+  }, [router.pathname])
+
   return (
     <Flex
       w="full"
-      backgroundColor="blackAlpha.900"
-      color="white"
+      backgroundColor="blackAlpha.200"
       flexDirection="row"
       justifyContent="space-between"
       px="10%"
+      shadow="lg"
     >
       <Flex w="60%" fontSize={36}>
         <Text>Stanley Wan</Text>
       </Flex>
 
       <Flex alignItems="center" w="40%" justifyContent="space-around">
-        <Text cursor="pointer" onClick={() => router.push("/core/Biography")}>
-          Home
-        </Text>
-        <Text cursor="pointer" onClick={() => router.push("/core/Experience")}>
+        <Link
+          cursor="pointer"
+          onClick={() => router.push("/core/Biography")}
+          fontWeight={routerName === "Biography" ? "bold" : "normal"}
+        >
+          Biography
+        </Link>
+        <Link
+          cursor="pointer"
+          onClick={() => router.push("/core/Experience")}
+          fontWeight={routerName === "Experience" ? "bold" : "normal"}
+        >
           Experience
-        </Text>
-        <Text cursor="pointer" onClick={() => router.push("/core/Projects")}>
+        </Link>
+        <Link
+          cursor="pointer"
+          onClick={() => router.push("/core/Projects")}
+          fontWeight={routerName === "Projects" ? "bold" : "normal"}
+        >
           Projects
-        </Text>
-        <Text cursor="pointer" onClick={() => router.push("/core/Resume")}>
+        </Link>
+        <Link
+          cursor="pointer"
+          onClick={() => router.push("/core/Resume")}
+          fontWeight={routerName === "Resume" ? "bold" : "normal"}
+        >
           Resume
-        </Text>
-        <Text cursor="pointer" onClick={() => router.push("/core/Contact")}>
+        </Link>
+        <Link
+          cursor="pointer"
+          onClick={() => router.push("/core/Contact")}
+          fontWeight={routerName === "Contact" ? "bold" : "normal"}
+        >
           Contact
-        </Text>
+        </Link>
       </Flex>
     </Flex>
   )
