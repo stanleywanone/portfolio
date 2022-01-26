@@ -19,7 +19,7 @@ export const Header: FC = () => {
       shadow="lg"
     >
       <Flex w="60%" fontSize={36}>
-        <Text>Stanley Wan</Text>
+        <Text fontWeight="bold">Stanley Wan</Text>
       </Flex>
 
       <Flex alignItems="center" w="40%" justifyContent="space-around">

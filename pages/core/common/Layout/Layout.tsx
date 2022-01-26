@@ -6,9 +6,9 @@ import { Sider } from "@/core/Sider/Sider"
 /**Color map :1B262C, 0F4C75, 3282B8 BBE1FA */
 export const Layout: FC = ({ children }) => {
   return (
-    <Flex flexDir="column">
+    <Flex flexDir="column" h="full" w="full">
       <Header />
-      <Flex h={"full"} pt={5} overflow="scroll">
+      <Flex h={"full"} pt={14} overflow="scroll">
         <Flex w="30%" h="full">
           <Sider />
         </Flex>

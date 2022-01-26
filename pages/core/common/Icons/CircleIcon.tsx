@@ -10,7 +10,7 @@ export const CircleIcon: FC<CircleIconProps> = ({ ...props }) => {
     borderRadius: "100%",
     h: "20px",
     w: "20px",
-    bgColor: "blackAlpha.500",
+    bgColor: "yellow.700",
     ...props,
   }
   return <Box {...circleStyleProps}></Box>

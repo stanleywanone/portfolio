@@ -48,7 +48,9 @@ export const Contact: FC = () => {
   return (
     <Flex w="full">
       <Flex w="30%" justifyContent="center">
-        <Text fontSize="5xl">Contact</Text>
+        <Text fontSize="5xl" fontFamily="monospace">
+          Contact
+        </Text>
       </Flex>
       <Flex w="70%" flexDirection="column" mt="10%">
         <form onSubmit={sendEmail}>

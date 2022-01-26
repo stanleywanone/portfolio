@@ -1,17 +1,19 @@
 import { FC } from "react"
+import { FaGraduationCap } from "react-icons/fa"
 import {
   Flex,
   Box,
   Text,
   Spacer,
-  UnorderedList,
+  List,
   ListItem,
+  ListIcon,
 } from "@chakra-ui/react"
 
 export const Biography: FC = () => {
   return (
     <Flex w="full" h="full" flexDirection="column">
-      <Text fontSize="5xl" mb="2%">
+      <Text fontSize="5xl" mb="2%" fontFamily="monospace">
         Biography
       </Text>
       <Text fontSize="xl">
@@ -31,28 +33,34 @@ export const Biography: FC = () => {
         My interests lie in delivering the concept of ideas on the front-end
         features related to mutilple areas of software engineerings.
       </Text>
-      <Flex w="full" mt={16}>
+      <Flex w="full" mt={10}>
         <Flex flexDirection="column" w="50%">
-          <Text fontSize="2xl" fontWeight="bold">
-            Interest
+          <Text fontSize="2xl" fontWeight="bold" fontFamily="monospace">
+            Interests
           </Text>
-          <UnorderedList ml="10%">
+          <List ml="10%">
             <ListItem>Front-End Engineer</ListItem>
             <ListItem>UI Engineer</ListItem>
             <ListItem>Software Engineer</ListItem>
             <ListItem>Full Stack Engineer</ListItem>
-          </UnorderedList>
+          </List>
         </Flex>
         <Flex flexDirection="column" w="50%">
-          <Text fontSize="2xl" fontWeight="bold">
+          <Text fontSize="2xl" fontWeight="bold" fontFamily="monospace">
             Education
           </Text>
-          <UnorderedList ml="10%">
-            <ListItem>MS in Computer Science, 2020</ListItem>
+          <List ml="10%">
+            <ListItem>
+              <ListIcon as={FaGraduationCap} />
+              MS in Computer Science, 2020
+            </ListItem>
             <Text fontSize="xs">California State University, Fresno</Text>
-            <ListItem>MS in Material Science and Engineering, 2013</ListItem>
+            <ListItem>
+              <ListIcon as={FaGraduationCap} />
+              MS in Material Science and Engineering, 2013
+            </ListItem>
             <Text fontSize="xs">Feng Chia University, Taiwan</Text>
-          </UnorderedList>
+          </List>
         </Flex>
       </Flex>
     </Flex>
