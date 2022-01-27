@@ -1,21 +1,15 @@
-import { useEffect, useRef, FC, useState } from "react"
-import WebViewer from "@pdftron/webviewer"
+import { FC } from "react"
 
 import { Flex } from "@chakra-ui/react"
+import dynamic from "next/dynamic"
+const Viewer = dynamic(() => import("./Viewer"), { ssr: false })
 
 export const Resume: FC = () => {
-  const viewer = useRef(null)
-
-  useEffect(() => {
-    WebViewer(
-      {
-        path: "/lib",
-        initialDoc: "../../../Resume.pdf",
-      },
-      viewer.current as any
-    ).then((instance) => {})
-  }, [viewer])
-  return <Flex w="full" h="full" ref={viewer}></Flex>
+  return (
+    <Flex w="full" h="full">
+      <Viewer />
+    </Flex>
+  )
 }
 
 export default Resume
