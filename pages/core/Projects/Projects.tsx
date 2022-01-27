@@ -52,7 +52,7 @@ export const Projects: FC = () => {
           Projects
         </Text>
       </Flex>
-      <Flex w="70%" flexDirection="column" my="5%">
+      <Flex w="70%" flexDirection="column" my="2%">
         {projectsData.map((data) => {
           return (
             <ProjectCard

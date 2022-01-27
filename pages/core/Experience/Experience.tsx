@@ -42,7 +42,7 @@ export const Experience: FC = () => {
           Experience
         </Text>
       </Flex>
-      <Flex w="70%">
+      <Flex w="70%" my="2%">
         <Flex w="20%" alignItems="center" flexDirection="column" pt="10%">
           <CircleIcon border="1px solid #975A16" mb={3} />
           <Flex h="40%" w="0.5%" bgColor="yellow.700" />
