@@ -1,6 +1,38 @@
 import { FC } from "react"
 import { Flex, Text, Spacer, UnorderedList, ListItem } from "@chakra-ui/react"
 import { CircleIcon } from "../../../common/Icons/CircleIcon"
+import { ExperienceCard } from "common/ExperienceCard/ExperienceCard"
+
+const experienceData = [
+  {
+    title: "UI Engineer",
+    company: "Hypergiant",
+    time: "2021 - present",
+    location: "Austin, TX",
+    about:
+      "Develops artificial intelligence products, and invests in other AI technologies and AI companies",
+    features: "SaaS platform in AI model traingng and building",
+  },
+  {
+    title: "Full Stack Software Engineer",
+    company: "Asiayo",
+    time: "2020 - 2021",
+    location: "Taipei, Taiwan",
+    about:
+      "A secured transaction of travelling and reservation booking website likes air b&b programming in JavaScript, PHP and MySQL.",
+    features:
+      "Designing front-end features across multiple platforms using modern industry-adopted languages and frameworks",
+  },
+  {
+    title: "Full Stack Engineer",
+    company: "Lyles Center for Innovation and Entrepreneurship",
+    time: "2019 - 2020",
+    location: "Fresno, CA",
+    about: "Innovation team.",
+    features:
+      "Design and define the architectures of Alexa innovation projects with IoT based devices",
+  },
+]
 
 export const Experience: FC = () => {
   return (
@@ -23,120 +55,18 @@ export const Experience: FC = () => {
           />
         </Flex>
         <Flex w="80%" flexDirection="column">
-          <Flex
-            w="90%"
-            mb="8%"
-            flexDirection="column"
-            p="3%"
-            border="1px solid #CBD5E0"
-            shadow="lg"
-            rounded="md"
-            _hover={{ shadow: "xl" }}
-          >
-            <Text
-              color="blackAlpha.700"
-              fontWeight="bold"
-              fontFamily="monospace"
-              fontSize="md"
-            >
-              UI Engineer
-            </Text>
-            <Text fontFamily="monospace">Hypergiant</Text>
-            <Text fontSize="sm" color="blackAlpha.700">
-              2021 - present, Austin, TX
-            </Text>
-            <UnorderedList ml="10%">
-              <ListItem fontSize="xs" fontWeight="bold">
-                About
-              </ListItem>
-              <Text fontSize="xs">
-                Develops artificial intelligence products, and invests in other
-                AI technologies and AI companies
-              </Text>
-              <ListItem fontSize="xs" fontWeight="bold">
-                Features
-              </ListItem>
-              <Text fontSize="xs">
-                SaaS platform in AI model traingng and building
-              </Text>
-            </UnorderedList>
-          </Flex>
-          <Flex
-            w="90%"
-            mb="8%"
-            flexDirection="column"
-            p="3%"
-            border="1px solid #CBD5E0"
-            shadow="lg"
-            rounded="md"
-            _hover={{ shadow: "xl" }}
-          >
-            <Text
-              color="blackAlpha.700"
-              fontWeight="bold"
-              fontFamily="monospace"
-              fontSize="md"
-            >
-              Full Stack Software Engineer
-            </Text>
-            <Text fontFamily="monospace">Asiayo</Text>
-            <Text fontSize="sm" color="blackAlpha.700">
-              2020 - 2021, Taipei, Taiwan
-            </Text>
-            <UnorderedList ml="10%">
-              <ListItem fontSize="xs" fontWeight="bold">
-                About
-              </ListItem>
-              <Text fontSize="xs">
-                A secured transaction of travelling and reservation booking
-                website likes air b&b programming in JavaScript, PHP and MySQL.
-              </Text>
-              <ListItem fontSize="xs" fontWeight="bold">
-                Features
-              </ListItem>
-              <Text fontSize="xs">
-                Designing front-end features across multiple platforms using
-                modern industry-adopted languages and frameworks
-              </Text>
-            </UnorderedList>
-          </Flex>
-          <Flex
-            w="90%"
-            flexDirection="column"
-            p="3%"
-            border="1px solid #CBD5E0"
-            shadow="lg"
-            rounded="md"
-            _hover={{ shadow: "xl" }}
-          >
-            <Text
-              color="blackAlpha.700"
-              fontWeight="bold"
-              fontFamily="monospace"
-              fontSize="md"
-            >
-              Full Stack Engineer
-            </Text>
-            <Text fontFamily="monospace">
-              Lyles Center for Innovation and Entrepreneurship
-            </Text>
-            <Text fontSize="sm" color="blackAlpha.700">
-              2019 - 2020, Fresno, CA
-            </Text>
-            <UnorderedList ml="10%">
-              <ListItem fontSize="xs" fontWeight="bold">
-                About
-              </ListItem>
-              <Text fontSize="xs">Innovation team</Text>
-              <ListItem fontSize="xs" fontWeight="bold">
-                Features
-              </ListItem>
-              <Text fontSize="xs">
-                Design and define the architectures of Alexa innovation projects
-                with IoT based devices
-              </Text>
-            </UnorderedList>
-          </Flex>
+          {experienceData.map((data) => {
+            return (
+              <ExperienceCard
+                title={data.title}
+                company={data.company}
+                time={data.time}
+                location={data.location}
+                about={data.about}
+                features={data.features}
+              />
+            )
+          })}
         </Flex>
       </Flex>
     </Flex>

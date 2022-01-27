@@ -8,6 +8,7 @@ import {
   List,
   ListItem,
   ListIcon,
+  UnorderedList,
 } from "@chakra-ui/react"
 
 export const Biography: FC = () => {
@@ -38,12 +39,12 @@ export const Biography: FC = () => {
           <Text fontSize="2xl" fontWeight="bold" fontFamily="monospace">
             Interests
           </Text>
-          <List ml="10%">
+          <UnorderedList ml="10%">
             <ListItem>Front-End Engineer</ListItem>
             <ListItem>UI Engineer</ListItem>
             <ListItem>Software Engineer</ListItem>
             <ListItem>Full Stack Engineer</ListItem>
-          </List>
+          </UnorderedList>
         </Flex>
         <Flex flexDirection="column" w="50%">
           <Text fontSize="2xl" fontWeight="bold" fontFamily="monospace">

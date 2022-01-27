@@ -19,7 +19,12 @@ export const Header: FC = () => {
       shadow="lg"
     >
       <Flex w="60%" fontSize={36}>
-        <Text fontWeight="bold">Stanley Wan</Text>
+        <Text
+          fontWeight="bold"
+          fontSize={{ base: "24px", md: "40px", lg: "56px" }}
+        >
+          Stanley Wan
+        </Text>
       </Flex>
 
       <Flex alignItems="center" w="40%" justifyContent="space-around">
