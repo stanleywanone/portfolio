@@ -1,8 +1,8 @@
 // export default App;
 import { FC } from "react"
-import { PageComponent } from "@/core/common/types/page"
+import { PageComponent } from "common/types/page"
 import { ChakraProvider } from "@chakra-ui/react"
-import { Layout } from "@/core/common/Layout/Layout"
+import { Layout } from "common/Layout/Layout"
 
 export const App: FC<{
   Component: PageComponent

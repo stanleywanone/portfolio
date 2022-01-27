@@ -63,3 +63,5 @@ export const Sider: FC = () => {
     </Flex>
   )
 }
+
+export default Sider

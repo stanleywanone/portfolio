@@ -62,3 +62,4 @@ export const Header: FC = () => {
     </Flex>
   )
 }
+export default Header

@@ -13,7 +13,7 @@ import {
   Link,
 } from "@chakra-ui/react"
 import { FaGithub } from "react-icons/fa"
-import { CircleIcon } from "../common/Icons/CircleIcon"
+import { CircleIcon } from "../../../common/Icons/CircleIcon"
 
 export const Projects: FC = () => {
   const router = useRouter()

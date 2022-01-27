@@ -61,3 +61,5 @@ export const Skills: FC = () => {
     </Flex>
   )
 }
+
+export default Skills

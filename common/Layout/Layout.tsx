@@ -19,3 +19,5 @@ export const Layout: FC = ({ children }) => {
     </Flex>
   )
 }
+
+export default Layout

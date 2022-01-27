@@ -1,6 +1,6 @@
 import { FC } from "react"
 import { Flex, Text, Spacer, UnorderedList, ListItem } from "@chakra-ui/react"
-import { CircleIcon } from "../common/Icons/CircleIcon"
+import { CircleIcon } from "../../../common/Icons/CircleIcon"
 
 export const Experience: FC = () => {
   return (
