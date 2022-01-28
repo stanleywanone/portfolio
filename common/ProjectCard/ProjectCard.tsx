@@ -51,11 +51,15 @@ export const ProjectCard: FC<ProjectCardProps> = ({
           border="1px solid #975A16"
           alignItems="center"
           justifyContent="space-around"
-          w="10%"
+          w={{ base: "20%", md: "12%", lg: "12%" }}
           cursor="pointer"
         >
           <FaGithub size="0.7em" color="#975A16" />
-          <Text fontSize="xs" fontWeight="bold" color="yellow.700">
+          <Text
+            fontSize={{ base: "xx-small", md: "xx-small", lg: "xs" }}
+            fontWeight="bold"
+            color="yellow.700"
+          >
             Code
           </Text>
         </Flex>

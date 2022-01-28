@@ -14,7 +14,12 @@ import {
 export const Biography: FC = () => {
   return (
     <Flex w="full" h="full" flexDirection="column">
-      <Text fontSize="5xl" mb="2%" fontFamily="monospace">
+      <Text
+        fontFamily="monospace"
+        fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
+        fontWeight="bold"
+        mb="2%"
+      >
         Biography
       </Text>
       <Text fontSize="xl">

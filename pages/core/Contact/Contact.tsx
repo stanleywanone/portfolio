@@ -48,7 +48,12 @@ export const Contact: FC = () => {
   return (
     <Flex w="full">
       <Flex w="30%" justifyContent="center">
-        <Text fontSize="5xl" fontFamily="monospace">
+        <Text
+          fontFamily="monospace"
+          fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
+          fontWeight="bold"
+          mb="2%"
+        >
           Contact
         </Text>
       </Flex>

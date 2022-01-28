@@ -1,6 +1,58 @@
 import { FC, useMemo } from "react"
 import { useRouter } from "next/router"
-import { Flex, Box, Text, Link } from "@chakra-ui/react"
+import {
+  Flex,
+  Box,
+  Text,
+  Link,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  MenuItemOption,
+  MenuGroup,
+  MenuOptionGroup,
+  MenuDivider,
+  IconButton,
+} from "@chakra-ui/react"
+import { GiHamburgerMenu } from "react-icons/gi"
+
+export interface LinkComponentProps {
+  name: string
+  routerName: string
+}
+
+export const LinkComponent: FC<LinkComponentProps> = ({ name, routerName }) => {
+  const router = useRouter()
+  return (
+    <Link
+      cursor="pointer"
+      onClick={() => router.push(`/core/${name}`)}
+      fontWeight={routerName === name ? "bold" : "normal"}
+    >
+      {name}
+    </Link>
+  )
+}
+
+export interface MenuComponentProps {
+  name: string
+}
+
+export const MenuComponent: FC<MenuComponentProps> = ({ name }) => {
+  const router = useRouter()
+  return (
+    <MenuItem onClick={() => router.push(`/core/${name}`)}>{name}</MenuItem>
+  )
+}
+
+const routerData = [
+  { name: "Biography" },
+  { name: "Experience" },
+  { name: "Projects" },
+  { name: "Resume" },
+  { name: "Contact" },
+]
 
 export const Header: FC = () => {
   const router = useRouter()
@@ -12,57 +64,45 @@ export const Header: FC = () => {
   return (
     <Flex
       w="full"
-      backgroundColor="blackAlpha.200"
+      backgroundColor="gray.200"
       flexDirection="row"
       justifyContent="space-between"
       px="10%"
       shadow="lg"
     >
-      <Flex w="60%" fontSize={36}>
+      <Flex fontSize={36}>
         <Text
           fontWeight="bold"
-          fontSize={{ base: "24px", md: "40px", lg: "56px" }}
+          fontSize={{ base: "24px", md: "32px", lg: "40px" }}
         >
           Stanley Wan
         </Text>
       </Flex>
+      <Flex display={{ lg: "none" }}>
+        <Menu>
+          <MenuButton
+            icon={<GiHamburgerMenu />}
+            as={IconButton}
+            bgColor="#E2E8F0"
+            m="0"
+          />
+          <MenuList>
+            {routerData.map((data) => {
+              return <MenuComponent name={data.name} />
+            })}
+          </MenuList>
+        </Menu>
+      </Flex>
 
-      <Flex alignItems="center" w="40%" justifyContent="space-around">
-        <Link
-          cursor="pointer"
-          onClick={() => router.push("/core/Biography")}
-          fontWeight={routerName === "Biography" ? "bold" : "normal"}
-        >
-          Biography
-        </Link>
-        <Link
-          cursor="pointer"
-          onClick={() => router.push("/core/Experience")}
-          fontWeight={routerName === "Experience" ? "bold" : "normal"}
-        >
-          Experience
-        </Link>
-        <Link
-          cursor="pointer"
-          onClick={() => router.push("/core/Projects")}
-          fontWeight={routerName === "Projects" ? "bold" : "normal"}
-        >
-          Projects
-        </Link>
-        <Link
-          cursor="pointer"
-          onClick={() => router.push("/core/Resume")}
-          fontWeight={routerName === "Resume" ? "bold" : "normal"}
-        >
-          Resume
-        </Link>
-        <Link
-          cursor="pointer"
-          onClick={() => router.push("/core/Contact")}
-          fontWeight={routerName === "Contact" ? "bold" : "normal"}
-        >
-          Contact
-        </Link>
+      <Flex
+        alignItems="center"
+        w="40%"
+        justifyContent="space-around"
+        display={{ base: "none", lg: "flex" }}
+      >
+        {routerData.map((data) => {
+          return <LinkComponent routerName={routerName} name={data.name} />
+        })}
       </Flex>
     </Flex>
   )

@@ -48,11 +48,21 @@ export const Projects: FC = () => {
   return (
     <Flex w="full">
       <Flex w="30%" justifyContent="center">
-        <Text fontSize="5xl" fontFamily="monospace">
+        <Text
+          fontFamily="monospace"
+          fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
+          fontWeight="bold"
+          mb="2%"
+        >
           Projects
         </Text>
       </Flex>
-      <Flex w="70%" flexDirection="column" my="2%">
+      <Flex
+        w="70%"
+        flexDirection="column"
+        my={{ base: "12%", md: "8%", lg: "8%" }}
+        ml={{ base: "12%", md: "8%", lg: "8%" }}
+      >
         {projectsData.map((data) => {
           return (
             <ProjectCard

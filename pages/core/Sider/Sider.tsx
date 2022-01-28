@@ -8,13 +8,18 @@ import { Flex, Box, Text, Icon, Image } from "@chakra-ui/react"
 export const Sider: FC = () => {
   const router = useRouter()
   return (
-    <Flex w="full" h="full" flexDirection="column">
+    <Flex
+      w="full"
+      h="full"
+      flexDirection="column"
+      mb={{ base: "5%", md: "5%" }}
+    >
       <Flex justifyContent="center">
         <Image
           borderRadius="100%"
           src={"../../../photo.jpg"}
           alt="photo"
-          w="70%"
+          w={{ base: "30%", md: "40%", lg: "70%" }}
         />
       </Flex>
       <Flex
