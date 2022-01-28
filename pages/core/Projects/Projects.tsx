@@ -66,6 +66,7 @@ export const Projects: FC = () => {
         {projectsData.map((data) => {
           return (
             <ProjectCard
+              key={data.link}
               link={data.link}
               projectName={data.projectName}
               description={data.description}

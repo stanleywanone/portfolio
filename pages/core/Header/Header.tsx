@@ -88,7 +88,7 @@ export const Header: FC = () => {
           />
           <MenuList>
             {routerData.map((data) => {
-              return <MenuComponent name={data.name} />
+              return <MenuComponent key={data.name} name={data.name} />
             })}
           </MenuList>
         </Menu>
@@ -101,7 +101,13 @@ export const Header: FC = () => {
         display={{ base: "none", lg: "flex" }}
       >
         {routerData.map((data) => {
-          return <LinkComponent routerName={routerName} name={data.name} />
+          return (
+            <LinkComponent
+              key={data.name}
+              routerName={routerName}
+              name={data.name}
+            />
+          )
         })}
       </Flex>
     </Flex>
