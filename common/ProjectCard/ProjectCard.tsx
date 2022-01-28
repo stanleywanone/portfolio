@@ -51,7 +51,7 @@ export const ProjectCard: FC<ProjectCardProps> = ({
           border="1px solid #975A16"
           alignItems="center"
           justifyContent="space-around"
-          w={{ base: "20%", md: "12%", lg: "12%" }}
+          w={{ base: "24%", md: "18%", lg: "12%" }}
           cursor="pointer"
         >
           <FaGithub size="0.7em" color="#975A16" />
