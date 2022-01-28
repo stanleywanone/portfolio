@@ -1,20 +1,5 @@
 import { FC } from "react"
-import { useRouter } from "next/router"
-import {
-  Flex,
-  Box,
-  Text,
-  Spacer,
-  UnorderedList,
-  ListItem,
-  Badge,
-  Center,
-  Image,
-  Link,
-} from "@chakra-ui/react"
-
-import { FaGithub } from "react-icons/fa"
-import { CircleIcon } from "../../../common/Icons/CircleIcon"
+import { Flex, Text } from "@chakra-ui/react"
 import { ProjectCard } from "common/ProjectCard/ProjectCard"
 
 const projectsData = [

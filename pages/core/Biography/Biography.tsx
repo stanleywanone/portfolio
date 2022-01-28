@@ -2,7 +2,6 @@ import { FC } from "react"
 import { FaGraduationCap } from "react-icons/fa"
 import {
   Flex,
-  Box,
   Text,
   Spacer,
   List,

@@ -2,17 +2,12 @@ import { FC, useMemo } from "react"
 import { useRouter } from "next/router"
 import {
   Flex,
-  Box,
   Text,
   Link,
   Menu,
   MenuButton,
   MenuList,
   MenuItem,
-  MenuItemOption,
-  MenuGroup,
-  MenuOptionGroup,
-  MenuDivider,
   IconButton,
 } from "@chakra-ui/react"
 import { GiHamburgerMenu } from "react-icons/gi"

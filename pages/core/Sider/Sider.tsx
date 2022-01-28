@@ -2,8 +2,7 @@ import { FC } from "react"
 import { useRouter } from "next/router"
 import { FaFacebook, FaInstagramSquare, FaGithub } from "react-icons/fa"
 import { MdEmail } from "react-icons/md"
-import { SiLinkedin } from "react-icons/si"
-import { Flex, Box, Text, Icon, Image } from "@chakra-ui/react"
+import { Flex, Text, Image } from "@chakra-ui/react"
 
 export const Sider: FC = () => {
   const router = useRouter()

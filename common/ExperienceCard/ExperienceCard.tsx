@@ -1,5 +1,5 @@
 import { FC } from "react"
-import { Flex, Text, Spacer, UnorderedList, ListItem } from "@chakra-ui/react"
+import { Flex, Text, UnorderedList, ListItem } from "@chakra-ui/react"
 
 export interface ExperienceCardProps {
   title: string

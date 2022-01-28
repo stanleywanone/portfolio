@@ -1,5 +1,4 @@
 import { FC, useEffect } from "react"
-
 import { Flex, Spinner } from "@chakra-ui/react"
 import dynamic from "next/dynamic"
 

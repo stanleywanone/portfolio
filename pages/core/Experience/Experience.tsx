@@ -1,5 +1,5 @@
 import { FC } from "react"
-import { Flex, Text, Spacer, UnorderedList, ListItem } from "@chakra-ui/react"
+import { Flex, Text } from "@chakra-ui/react"
 import { CircleIcon } from "../../../common/Icons/CircleIcon"
 import { ExperienceCard } from "common/ExperienceCard/ExperienceCard"
 
