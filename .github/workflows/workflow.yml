@@ -17,6 +17,6 @@ jobs:
         with:
           aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws_region: "us-east-1" # optional: defaults to us-east-1
+          aws_region: us-east-1 # optional: defaults to us-east-1
           # SOURCE_DIR: "public" # optional: defaults to entire repository
       - run: aws s3 sync ./out s3://portfolio-stanley-wan
