@@ -27,6 +27,12 @@ const projectsData = [
     description:
       "Find out the most pupular movies lists based on ReactJS, MongoDB and Next.js",
   },
+  {
+    link: "https://github.com/stanleywanone/chat-web",
+    projectName: "Chat Web",
+    description:
+      "Users can communicate with each other with the real time data, based on Socket.io and ReactJS",
+  },
 ]
 
 export const Projects: FC = () => {
