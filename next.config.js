@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  basePath: "/swp",
+  // basePath: "/swp",
   // async redirects() {
   //   return [
   //     {
