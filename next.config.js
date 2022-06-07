@@ -1,12 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  basePath: "/swp",
+  // basePath: "/swp",
   async redirects() {
     return [
       {
         source: "/",
-        destination: "/swp/core/Biography",
+        destination: "/core/Biography",
         permanent: true,
       },
     ]
