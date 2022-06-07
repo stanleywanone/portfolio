@@ -9,8 +9,12 @@ import {
   ListIcon,
   UnorderedList,
 } from "@chakra-ui/react"
+import { useRouter } from "next/router"
 
 export const Biography: FC = () => {
+  const { basePath } = useRouter()
+
+  console.log("the base Path", basePath)
   return (
     <Flex w="full" h="full" flexDirection="column">
       <Text
