@@ -2,7 +2,6 @@
 const nextConfig = {
   reactStrictMode: true,
   basePath: "/swp",
-  assetPrefix: "https://stanley-wan-portfolio.vercel.app",
   // async redirects() {
   //   return [
   //     {
