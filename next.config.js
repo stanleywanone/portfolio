@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  // basePath: "/swp",
+  basePath: "https://vercel.com/stanleywanone/portfolio/swp",
   // async redirects() {
   //   return [
   //     {
