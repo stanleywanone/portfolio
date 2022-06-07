@@ -16,7 +16,7 @@ export const Sider: FC = () => {
       <Flex justifyContent="center">
         <Image
           borderRadius="100%"
-          src={"../photo.jpg"}
+          src={"/swp/photo.jpg"}
           alt="photo"
           w={{ base: "30%", md: "40%", lg: "70%" }}
         />
