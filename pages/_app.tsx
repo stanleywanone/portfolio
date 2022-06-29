@@ -11,7 +11,7 @@ export const App: FC<{
   const getLayout = Component.getLayout || ((page) => <Layout>{page}</Layout>)
 
   return (
-    <div style={{ height: "100vh" }}>
+    <div style={{ minHeight: "100vh" }}>
       <ChakraProvider>{getLayout(<Component {...pageProps} />)}</ChakraProvider>
     </div>
   )

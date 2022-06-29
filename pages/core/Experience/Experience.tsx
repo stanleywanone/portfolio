@@ -6,6 +6,15 @@ import { ExperienceCard } from "common/ExperienceCard/ExperienceCard"
 const experienceData = [
   {
     title: "UI Engineer",
+    company: "Apple",
+    time: "2022 - present",
+    location: "Austin, TX",
+    about: "Retail App team to track customers activities history",
+    features:
+      "Building data visualization and features for monitoring and analysing data ",
+  },
+  {
+    title: "UI Engineer",
     company: "Hypergiant",
     time: "2021 - present",
     location: "Austin, TX",
@@ -50,9 +59,21 @@ export const Experience: FC = () => {
       <Flex w="70%" my={{ base: "12%", md: "8%", lg: "2%" }}>
         <Flex w="20%" alignItems="center" flexDirection="column" pt="10%">
           <CircleIcon border="1px solid #975A16" mb={3} />
-          <Flex h="40%" w="0.5%" bgColor="yellow.700" />
+          <Flex h="250px" w="0.5%" bgColor="yellow.700" />
           <CircleIcon bgColor="white" border="0.5px solid #975A16" my={3} />
-          <Flex h="40%" w="0.5%" bgColor="yellow.700" my={3} />
+          <Flex h="180px" w="0.5%" bgColor="yellow.700" my={3} />
+          <CircleIcon
+            color="white"
+            bgColor="white"
+            border="1px solid #975A16"
+          />
+          <Flex h="180px" w="0.5%" bgColor="yellow.700" my={3} />
+          <CircleIcon
+            color="white"
+            bgColor="white"
+            border="1px solid #975A16"
+          />
+          <Flex h="200px" w="0.5%" bgColor="yellow.700" my={3} />
           <CircleIcon
             color="white"
             bgColor="white"
@@ -64,10 +85,10 @@ export const Experience: FC = () => {
           flexDirection="column"
           my={{ base: "12%", md: "8%", lg: "8%" }}
         >
-          {experienceData.map((data) => {
+          {experienceData.map((data, i) => {
             return (
               <ExperienceCard
-                key={data.title}
+                key={`${data.title}` + i}
                 title={data.title}
                 company={data.company}
                 time={data.time}
