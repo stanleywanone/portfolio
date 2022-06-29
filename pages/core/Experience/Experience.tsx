@@ -73,12 +73,6 @@ export const Experience: FC = () => {
             bgColor="white"
             border="1px solid #975A16"
           />
-          <Flex h="200px" w="0.5%" bgColor="yellow.700" my={3} />
-          <CircleIcon
-            color="white"
-            bgColor="white"
-            border="1px solid #975A16"
-          />
         </Flex>
         <Flex
           w="80%"
