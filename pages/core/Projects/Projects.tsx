@@ -4,10 +4,10 @@ import { ProjectCard } from "common/ProjectCard/ProjectCard"
 
 const projectsData = [
   {
-    link: "https://github.com/stanleywanone/FitnessU",
-    projectName: "FitnessU App",
+    link: "https://github.com/stanleywanone/shopping-cart",
+    projectName: "Shopping cart",
     description:
-      "Personal workout assistant app based on the React native, Expo and firebase",
+      "Shopping cart is a virtual online shopping platform, customers can buy items online and checkout at the end of their shopping",
   },
   {
     link: "https://github.com/stanleywanone/smart-website",
