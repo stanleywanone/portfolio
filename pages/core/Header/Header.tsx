@@ -22,8 +22,12 @@ export const LinkComponent: FC<LinkComponentProps> = ({ name, routerName }) => {
   return (
     <Link
       cursor="pointer"
-      onClick={() => router.push(`/core/${name}`)}
+      onClick={() =>
+        name !== "Resume" ? router.push(`/core/${name}`) : undefined
+      }
       fontWeight={routerName === name ? "bold" : "normal"}
+      href={name === "Resume" ? "../../../Resume.pdf" : undefined}
+      target={name === "Resume" ? "_blank" : undefined}
     >
       {name}
     </Link>

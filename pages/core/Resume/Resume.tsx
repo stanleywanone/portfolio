@@ -8,8 +8,11 @@ export const Resume: FC = () => {
   })
 
   return (
-    <Flex w="full" h="full">
+    <Flex w="full" h="full" fontSize="48px">
       <Viewer />
+      {/* <a href={"../../../Resume.pdf"} target="_blank" rel="noreferrer">
+        Download Pdf
+      </a> */}
     </Flex>
   )
 }

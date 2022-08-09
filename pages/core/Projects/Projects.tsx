@@ -10,18 +10,6 @@ const projectsData = [
       "Shopping cart is a virtual online shopping platform, customers can buy items online and checkout at the end of their shopping",
   },
   {
-    link: "https://github.com/stanleywanone/smart-website",
-    projectName: "Smart Website",
-    description:
-      "Smart web control intelligent home in lives based on ReactJS, PHP and IFTTT",
-  },
-  {
-    link: "https://github.com/stanleywanone/studenthub",
-    projectName: "Studenthub",
-    description:
-      "A self-community for studnets exchange knowledge based on ReactJS, AWS",
-  },
-  {
     link: "https://github.com/stanleywanone/movie-review",
     projectName: "Movie Review",
     description:
@@ -32,6 +20,18 @@ const projectsData = [
     projectName: "Chat Web",
     description:
       "Users can communicate with each other with the real time data, based on Socket.io and ReactJS",
+  },
+  {
+    link: "https://github.com/stanleywanone/smart-website",
+    projectName: "Smart Website",
+    description:
+      "Smart web control intelligent home in lives based on ReactJS, PHP and IFTTT",
+  },
+  {
+    link: "https://github.com/stanleywanone/studenthub",
+    projectName: "Studenthub",
+    description:
+      "A self-community for studnets exchange knowledge based on ReactJS, AWS",
   },
 ]
 
