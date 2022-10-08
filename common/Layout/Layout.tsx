@@ -1,8 +1,8 @@
 import { FC, useMemo } from "react"
 import { useRouter } from "next/router"
 import { Flex } from "@chakra-ui/react"
-import { Header } from "@/core/Header/Header"
-import { Sider } from "@/core/Sider/Sider"
+import { Header } from "../Header"
+import { Sider } from "../Sider"
 
 /**Color map :1B262C, 0F4C75, 3282B8 BBE1FA */
 export const Layout: FC = ({ children }) => {

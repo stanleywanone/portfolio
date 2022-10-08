@@ -14,18 +14,22 @@ import { GiHamburgerMenu } from "react-icons/gi"
 
 export interface LinkComponentProps {
   name: string
+  route: string
   routerName: string
 }
 
-export const LinkComponent: FC<LinkComponentProps> = ({ name, routerName }) => {
+export const LinkComponent: FC<LinkComponentProps> = ({
+  name,
+  routerName,
+  route,
+}) => {
   const router = useRouter()
+  console.log("routerName, ", routerName)
   return (
     <Link
       cursor="pointer"
-      onClick={() =>
-        name !== "Resume" ? router.push(`/core/${name}`) : undefined
-      }
-      fontWeight={routerName === name ? "bold" : "normal"}
+      onClick={() => (name !== "Resume" ? router.push(`/${route}`) : undefined)}
+      fontWeight={routerName === route ? "bold" : "normal"}
       href={name === "Resume" ? "../../../Resume.pdf" : undefined}
       target={name === "Resume" ? "_blank" : undefined}
     >
@@ -36,28 +40,27 @@ export const LinkComponent: FC<LinkComponentProps> = ({ name, routerName }) => {
 
 export interface MenuComponentProps {
   name: string
+  route: string
 }
 
-export const MenuComponent: FC<MenuComponentProps> = ({ name }) => {
+export const MenuComponent: FC<MenuComponentProps> = ({ name, route }) => {
   const router = useRouter()
-  return (
-    <MenuItem onClick={() => router.push(`/core/${name}`)}>{name}</MenuItem>
-  )
+  return <MenuItem onClick={() => router.push(`/${route}`)}>{name}</MenuItem>
 }
 
 const routerData = [
-  { name: "Biography" },
-  { name: "Experience" },
-  { name: "Projects" },
-  { name: "Resume" },
-  { name: "Contact" },
+  { name: "Biography", route: "biography" },
+  { name: "Experiences", route: "experiences" },
+  { name: "Projects", route: "projects" },
+  { name: "Resume", route: "resume" },
+  { name: "Contact", route: "contact" },
 ]
 
 export const Header: FC = () => {
   const router = useRouter()
 
   const routerName = useMemo(() => {
-    return router.pathname.substring(6)
+    return router.pathname.substring(1)
   }, [router.pathname])
 
   return (
@@ -87,7 +90,13 @@ export const Header: FC = () => {
           />
           <MenuList>
             {routerData.map((data) => {
-              return <MenuComponent key={data.name} name={data.name} />
+              return (
+                <MenuComponent
+                  key={data.name}
+                  name={data.name}
+                  route={data.route}
+                />
+              )
             })}
           </MenuList>
         </Menu>
@@ -105,6 +114,7 @@ export const Header: FC = () => {
               key={data.name}
               routerName={routerName}
               name={data.name}
+              route={data.route}
             />
           )
         })}

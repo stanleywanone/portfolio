@@ -1,6 +1,6 @@
 import { FC } from "react"
 import { Flex, Text } from "@chakra-ui/react"
-import { CircleIcon } from "../../../common/Icons/CircleIcon"
+import { CircleIcon } from "../../common/Icons/CircleIcon"
 import { ExperienceCard } from "common/ExperienceCard/ExperienceCard"
 
 const experienceData = [

@@ -27,16 +27,16 @@ export const Biography: FC = () => {
           Hi, I’m Stanley Wan, currently working as a UI Engineer at Apple in
           the Retail App team. I have a Master’s degree in CS from CSU, Fresno
           State and a Master’s in MSE from the Feng Chia University in Taiwan.
-          <Spacer mb="2%" />
-          In Apple, I’m responsible for developing a SaaS platform which help
-          the data scientises and maching learning engineers monior and anylsis
-          the data more straightforward. On the other hand, I worked on
+          <br /> <br />
+          In Apple, and I’m responsible for developing a SaaS platform which
+          help the data scientises and maching learning engineers monior and
+          anylsis the data more straightforward. On the other hand, I worked on
           designing front-end features across multiple platforms using modern
           industry-adopted languages and framework and Optimizing API calls
           using modular application design and light weight dependencies. Aside
           from work, I am also an open-source enthusiast and have created
-          projects that were listed in GitHub trending. <Spacer mb="2%" />
-          <Spacer />
+          projects that were listed in GitHub trending.
+          <br /> <br />
           My interests lie in delivering the concept of ideas on the front-end
           features related to mutilple areas of software engineerings.
         </Text>
