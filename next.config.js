@@ -5,7 +5,7 @@ const nextConfig = {
     return [
       {
         source: "/",
-        destination: "/core/Biography",
+        destination: "biography",
         permanent: true,
       },
     ]
@@ -13,7 +13,3 @@ const nextConfig = {
 }
 
 module.exports = nextConfig
-
-// module.exports = {
-//   distDir: "build",
-// }
