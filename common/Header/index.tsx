@@ -24,7 +24,7 @@ export const LinkComponent: FC<LinkComponentProps> = ({
   route,
 }) => {
   const router = useRouter()
-  console.log("routerName, ", routerName)
+
   return (
     <Link
       cursor="pointer"
@@ -49,18 +49,18 @@ export const MenuComponent: FC<MenuComponentProps> = ({ name, route }) => {
 }
 
 const routerData = [
-  { name: "Biography", route: "biography" },
-  { name: "Experiences", route: "experiences" },
-  { name: "Projects", route: "projects" },
-  { name: "Resume", route: "resume" },
-  { name: "Contact", route: "contact" },
+  { name: "Biography", route: "/portfolio/biography" },
+  { name: "Experiences", route: "/portfolio/experiences" },
+  { name: "Projects", route: "/portfolio/projects" },
+  { name: "Resume", route: "/portfolio/resume" },
+  { name: "Contact", route: "/portfolio/contact" },
 ]
 
 export const Header: FC = () => {
   const router = useRouter()
 
   const routerName = useMemo(() => {
-    return router.pathname.substring(1)
+    return router.pathname
   }, [router.pathname])
 
   return (
