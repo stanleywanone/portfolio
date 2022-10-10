@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+[![codecov](https://codecov.io/github/stanleywanone/portfolio/branch/main/graph/badge.svg?token=9QZ3B73BMQ)](https://codecov.io/github/stanleywanone/portfolio)
 
 ## Getting Started
 
