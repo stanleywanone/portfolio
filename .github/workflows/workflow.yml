@@ -23,8 +23,9 @@ jobs:
         run: yarn test
 
       - name: Upload coverage to Codecov
-        uses:
-          codecov/codecov-action@v1
+        uses: codecov/codecov-action@v1
+        with:
+          token: 103bc106-256f-4e55-8ea6-15443d9f5f73
 
           # - uses: aws-actions/configure-aws-credentials@v1
           #   with:
