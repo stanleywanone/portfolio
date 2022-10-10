@@ -9,8 +9,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    strategy:
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -25,7 +23,7 @@ jobs:
         run: yarn install
 
       - name: Run tests
-        run: yarn test
+        run: yarn test:coverage
 
       - name: Upload coverage to Codecov
         uses:
