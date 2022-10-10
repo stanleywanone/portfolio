@@ -6,18 +6,14 @@ on:
       - "main"
 
 jobs:
-  build:
+  covdecov:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-        with:
-          fetch-depth: 2
       - name: Set up Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: ["17.x"]
+          node-version: [12.x, 13.x, 14.x, 15.x, 16.x, 17.x]
 
       - name: Install dependencies
         run: yarn install
