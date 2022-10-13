@@ -30,10 +30,10 @@ export const Sider: FC = () => {
       >
         <Text fontSize="4xl">Stanley Wan</Text>
         <Text fontSize="2xl" color="blackAlpha.500">
-          UI Engineer
+          Frontend Developer
         </Text>
         <Text fontSize="xl" color="yellow.700">
-          Hypergiant
+          Apple
         </Text>
       </Flex>
       <Flex justifyContent="center" mx="10%" my={5}>
