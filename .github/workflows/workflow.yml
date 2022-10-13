@@ -19,18 +19,18 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
-      - name: Run tests
-        run: yarn test
+      # - name: Run tests
+      #   run: yarn test
 
-      - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v1
-        with:
-          token: 103bc106-256f-4e55-8ea6-15443d9f5f73
+      # - name: Upload coverage to Codecov
+      #   uses: codecov/codecov-action@v1
+      #   with:
+      #     token: 103bc106-256f-4e55-8ea6-15443d9f5f73
 
-          # - uses: aws-actions/configure-aws-credentials@v1
-          #   with:
-          #     aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          #     aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          #     aws-region: us-east-1 # optional: defaults to us-east-1
-          #     # SOURCE_DIR: "public" # optional: defaults to entire repository
-          # - run: aws s3 sync ./out s3://portfolio-stanley-wan
+      # - uses: aws-actions/configure-aws-credentials@v1
+      #   with:
+      #     aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      #     aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      #     aws-region: us-east-1 # optional: defaults to us-east-1
+      #     # SOURCE_DIR: "public" # optional: defaults to entire repository
+      # - run: aws s3 sync ./out s3://portfolio-stanley-wan

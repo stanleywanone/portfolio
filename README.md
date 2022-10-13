@@ -1,4 +1,4 @@
-[![codecov](https://codecov.io/github/stanleywanone/portfolio/branch/main/graph/badge.svg?token=9QZ3B73BMQ)](https://codecov.io/github/stanleywanone/portfolio)
+<!-- [![codecov](https://codecov.io/github/stanleywanone/portfolio/branch/main/graph/badge.svg?token=9QZ3B73BMQ)](https://codecov.io/github/stanleywanone/portfolio) -->
 
 ## Getting Started
 
