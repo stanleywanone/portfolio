@@ -24,9 +24,10 @@ export const Biography: FC = () => {
           Biography
         </Text>
         <Text fontSize="xl">
-          Hi, I’m Stanley Wan, currently working as a UI Engineer at Apple in
-          the Retail App team. I have a Master’s degree in CS from CSU, Fresno
-          State and a Master’s in MSE from the Feng Chia University in Taiwan.
+          Hi, I’m Stanley Wan, currently working as a Frontend Developer at
+          Apple in the Retail App team. I have a Master’s degree in CS from CSU,
+          Fresno State and a Master’s in MSE from the Feng Chia University in
+          Taiwan.
           <br /> <br />
           In Apple, and I’m responsible for developing a SaaS platform which
           help the data scientises and maching learning engineers monior and

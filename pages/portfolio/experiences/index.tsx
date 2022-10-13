@@ -5,7 +5,7 @@ import { ExperienceCard } from "common/ExperienceCard/ExperienceCard"
 
 const experienceData = [
   {
-    title: "UI Engineer",
+    title: "Frontend Developer",
     company: "Apple",
     time: "2022 - present",
     location: "Austin, TX",
